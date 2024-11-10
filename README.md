@@ -1,2 +1,2 @@
-# capsstone_sentiment_analysis
-This repository holds the files for sentiment analysis capstone project
+# Sentiment Analysis
+This repository holds required files for "IISc CCE AI/ML Capstone Project - Sentiment Analysis"
