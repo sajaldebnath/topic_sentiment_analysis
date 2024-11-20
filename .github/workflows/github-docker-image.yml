@@ -34,6 +34,8 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: Dockerfile
+          file: ./docker-repo/Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/lda-topic-modeling-app:latest
+          # tags: ghcr.io/${{ github.repository_owner }}/lda-topic-modeling-app:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
