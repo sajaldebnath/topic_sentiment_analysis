@@ -1,0 +1,13 @@
+
+pandas
+numpy
+nltk
+scikit-learn
+pyLDAvis
+matplotlib
+seaborn
+wordcloud
+optuna
+transformers
+tqdm
+pytest
