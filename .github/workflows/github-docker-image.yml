@@ -3,10 +3,10 @@ name: Build a container image and Push to GitHub Container Registry
 on:
   push:
     branches:
-      - release  # Trigger workflow on pushes to the release branch
+      - main  # Trigger workflow on pushes to the release branch
   pull_request:  # Optionally trigger on pull requests
     branches:
-      - release
+      - main
 
 jobs:
   build-and-push:
