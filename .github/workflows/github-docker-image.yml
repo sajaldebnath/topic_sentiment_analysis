@@ -3,7 +3,7 @@ name: Build a container image and Push to GitHub Container Registry
 on:
   push:
     branches:
-      - main  # Trigger workflow on pushes to the release branch
+      - main  # Trigger workflow on pushes to the main branch
   pull_request:  # Optionally trigger on pull requests
     branches:
       - main
@@ -36,6 +36,6 @@ jobs:
           context: .
           file: ./docker-repo/Dockerfile
           push: true
-          # tags: ghcr.io/${{ github.repository_owner }}/lda-topic-modeling-app:latest
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ghcr.io/${{ github.repository_owner }}/lda-topic-modeling-app:latest
+          #tags: ${{ steps.meta.outputs.tags }}
+          #labels: ${{ steps.meta.outputs.labels }}
