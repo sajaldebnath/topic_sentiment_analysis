@@ -145,7 +145,7 @@ For instance:
   * Gensim
   * Sklearn (scikit-learn)
 
-While Gensim is the more prevalent method to be used, I chose **scikit-learn** library because it was faster to run in my environment and dataset.
+While Gensim is the more prevalent method, I chose **scikit-learn** library because it was faster to run in my environment and dataset.
 
 #### **Process**
 The main implementation steps are defined below. I will provide more details as I go through them.
