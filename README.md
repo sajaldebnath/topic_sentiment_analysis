@@ -38,7 +38,7 @@ LDA is ideal for tasks like:
 
 * Organizing unstructured text data for further analysis.
 
-Since I am working on user reviews dataset, I am using LDA as it is easier to implement and provides fairly accurate result.
+Since I am working on a user reviews dataset, I am using LDA, which is easier to implement and provides fairly accurate results.
 
 
 2. **Sentiment Analysis**:
