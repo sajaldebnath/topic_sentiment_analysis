@@ -9,7 +9,9 @@ COPY ./docker-repo/requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the Python script into the container
-COPY ./docker-repo/topicmodeling_sentimentanalysis_lda_using_scikit_learn.py /app/topicmodeling_sentimentanalysis_lda_using_scikit_learn.py
+COPY ./docker-repo/topicmodeling_sentimentanalysis_airbnb.py /app/topicmodeling_sentimentanalysis_airbnb.py
+COPY ./docker-repo/docker-repo/topicmodeling_sentimentanalysis_tripadvisor.py /app/docker-repo/topicmodeling_sentimentanalysis_tripadvisor.py
 
 # Set the command to run the script
 CMD ["python", "topicmodeling_sentimentanalysis_lda_using_scikit_learn.py"]
+CMD ["python", "docker-repo/topicmodeling_sentimentanalysis_tripadvisor.py"]
