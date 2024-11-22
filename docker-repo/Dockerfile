@@ -13,5 +13,5 @@ COPY ./docker-repo/topicmodeling_sentimentanalysis_airbnb.py /app/topicmodeling_
 COPY ./docker-repo/topicmodeling_sentimentanalysis_tripadvisor.py /app/topicmodeling_sentimentanalysis_tripadvisor.py
 
 # Set the command to run the script
-CMD ["python", "topicmodeling_sentimentanalysis_lda_using_scikit_learn.py"]
+CMD ["python", "topicmodeling_sentimentanalysis_airbnb.py"]
 CMD ["python", "topicmodeling_sentimentanalysis_tripadvisor.py"]
